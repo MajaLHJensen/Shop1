@@ -11,8 +11,6 @@ function App() {
       <div className="App">
           <header className="App-header">
               <Shop />
-              <Clothes/>
-              <Button/>
           </header>
       </div>
   );

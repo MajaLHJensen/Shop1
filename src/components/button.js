@@ -1,18 +1,11 @@
-import { useState } from 'react';
+import React from 'react';
 
-function Button() { {
-    const [count, setCount] = useState(0);
-
-
-function handleClick(){
-    setCount(count + 1);
+function Button({ addToBasket }) {
+    return (
+        <button onClick={addToBasket}>
+            Tilføj til kurv
+        </button>
+    );
 }
 
-return (
-    <button onClick={handleClick}>
-      Like {count} Button
-    </button>
-  );
-}
-}
 export default Button;

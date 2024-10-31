@@ -1,9 +1,6 @@
-import React from 'react';
-import Clothes from "./shopItems"; // Ensure this path matches where `shopItems.js` is located
-<script src="https://kit.fontawesome.com/d159f481dd.js" crossorigin="anonymous"></script>
-
-
-
+import React, { useState } from 'react';
+import Clothes from "./shopItems";
+import Basket from "./basket"; // New Basket component
 
 const clothItems = [
     {id: 1, brand: "Ganni", model: "Loose pants", size: 38, price: 2099, color: "black", description: "These Dark Blue Fluffy Wide Jeans have five pockets with zip and button closure and GANNI logo on the back pocket."},
@@ -12,14 +9,24 @@ const clothItems = [
 ];
 
 function Shop() {
+    const [basketItems, setBasketItems] = useState([]);
+
+    // Function to add an item to the basket
+    const addToBasket = (item) => {
+        setBasketItems((prevItems) => [...prevItems, item]);
+    };
+
     return (
         <div>
-            <h1>Clothes list </h1> <button>Shopping Basket</button>
+            <h1>Clothes List</h1>
+            <button>Shopping Basket</button>
             {clothItems.map(item => (
-                <Clothes key={item.id} {...item} />
+                <Clothes key={item.id} {...item} addToBasket={() => addToBasket(item)} />
             ))}
+            <Basket items={basketItems} /> {/* Render the Basket component */}
         </div>
     );
 }
 
 export default Shop;
+
