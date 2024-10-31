@@ -2,7 +2,7 @@ import React from 'react';
 
 function Button({ addToBasket }) {
     return (
-        <button onClick={addToBasket}>
+        <button className="c-button" onClick={addToBasket}>
             Tilføj til kurv
         </button>
     );

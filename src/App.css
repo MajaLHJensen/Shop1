@@ -1,0 +1,89 @@
+/* General Reset and Layout */
+body, html, #root {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.App {
+    background-color: #f5f5f5;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Heading font size for each clothes item */
+.clothes-item h2 {
+    font-size: 35px; /* Change this value as needed */
+    color: #000000;
+    margin-bottom: 5px;
+}
+
+/* Font size for the item details (model, size, price, color, and description) */
+.clothItems p {
+    font-size: 30px; /* Adjust this for the desired size */
+    color: #000000;
+    margin: 5px 0;
+    line-height: 35px;
+}
+
+.clotheItem{
+    margin: 50px;
+    border: #000000 solid 1px;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 50%;
+}
+
+.basket{
+    margin: 50px;
+}
+
+.basket h2{
+    font-size: 35px;
+}
+
+.basket p{
+    font-size: 30px;
+}
+
+.c-button{
+    font-size: 23px;
+    background-color: rgb(81, 80, 80);
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    max-width: 20%;
+}
+.item-container {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.item-image {
+    width: 10%;
+    height: auto;
+    margin-right: 15px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.item-details {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.item-details h2 {
+    font-size: 30px; /* Brand name size */
+}
+
+.item-details p {
+    font-size: 25px; /* Item details size */
+}
+
