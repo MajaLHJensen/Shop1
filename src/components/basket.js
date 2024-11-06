@@ -5,7 +5,7 @@ function Basket({ items }) {
     const totalPrice = items.reduce((total, item) => total + item.price, 0);
 
     return (
-        <div className="basket" style={{ marginTop: "20px", padding: "15px", border: "1px solid #ddd", borderRadius: "8px" }}>
+        <div className="basket" style={{ marginTop: "10px", padding: "10px", border: "1px solid #ddd", borderRadius: "8px" }}>
             <h2>Shopping Basket</h2>
             <p> <b>Items in Basket:</b> {itemCount}</p>
             

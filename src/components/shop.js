@@ -44,7 +44,7 @@ function Shop() {
 
     return (
         <div>
-            <h1 style={{ fontSize: "50px", margin: "50px" }}>Clothes List</h1> 
+            <h1 style={{ fontSize: "30px", margin: "10px" }}>Clothes List</h1> 
             {clothItems.map(item => (
                 <Clothes key={item.id} item={item} addToBasket={() => addToBasket(item)} />
             ))}

@@ -13,41 +13,41 @@ body, html, #root {
 
 /* Heading font size for each clothes item */
 .clothes-item h2 {
-    font-size: 35px; /* Change this value as needed */
+    font-size: 20px; /* Change this value as needed */
     color: #000000;
     margin-bottom: 5px;
 }
 
 /* Font size for the item details (model, size, price, color, and description) */
 .clothItems p {
-    font-size: 30px; /* Adjust this for the desired size */
+    font-size: 3px; /* Adjust this for the desired size */
     color: #000000;
     margin: 5px 0;
-    line-height: 35px;
 }
 
 .clotheItem{
-    margin: 50px;
+    margin: 10px;
     border: #000000 solid 1px;
-    padding: 30px;
+    padding: 10px;
     border-radius: 10px;
     max-width: 50%;
 }
 
 .basket{
-    margin: 50px;
+   margin: 10px;
+    width: 97%;
 }
 
 .basket h2{
-    font-size: 35px;
+    font-size: 20px;
 }
 
 .basket p{
-    font-size: 30px;
+    font-size: 18px;
 }
 
 .c-button{
-    font-size: 23px;
+    font-size: 15px;
     background-color: rgb(81, 80, 80);
     color: white;
     border-radius: 5px;
@@ -57,8 +57,6 @@ body, html, #root {
 .item-container {
     display: flex;
     align-items: center;
-    padding: 10px;
-    margin: 10px 0;
     border: 1px solid #ddd;
     border-radius: 8px;
     background-color: #fff;
@@ -84,6 +82,6 @@ body, html, #root {
 }
 
 .item-details p {
-    font-size: 25px; /* Item details size */
+    font-size: 10px; /* Item details size */
 }
 

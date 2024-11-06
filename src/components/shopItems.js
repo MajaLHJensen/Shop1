@@ -5,15 +5,15 @@ function Clothes({ item, addToBasket }) {
     const containerStyle = {
         display: "flex",
         alignItems: "center",
-        padding: "40px",
-        margin: "10px 0",
         border: "1px solid #ddd",
         borderRadius: "8px",
-        boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)"
+        boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
+        padding: "25px",
+        margin: "10px"
     };
 
     const imageStyle = {
-        width: "10%",
+        width: "8%",
         height: "auto",
         marginRight: "15px",
         borderRadius: "8px",
@@ -24,13 +24,13 @@ function Clothes({ item, addToBasket }) {
     return (
         <div id={item.id} style={containerStyle}>
             <img src={item.image} alt={`${item.brand} ${item.model}`} style={imageStyle} />
-            <div style={{ display: "flex", flexDirection: "column", textAlign: "left" }}>
-                <p style={{ fontSize: "24px" }}><b>Brand:</b> {item.brand}</p>
-                <p style={{ fontSize: "24px" }}><b>Model:</b> {item.model}</p>
-                <p style={{ fontSize: "24px" }}><b>Size:</b> {item.size}</p>
-                <p style={{ fontSize: "24px" }}><b>Price:</b> {item.price} DKK</p>
-                <p style={{ fontSize: "24px" }}><b>Color:</b> {item.color}</p>
-                <p style={{ fontSize: "24px" }}><b>Description:</b> {item.description}</p>
+            <div style={{ }}>
+                <p style={{ fontSize: "18px" }}><b>Brand:</b> {item.brand}</p>
+                <p style={{ fontSize: "18px" }}><b>Model:</b> {item.model}</p>
+                <p style={{ fontSize: "18px" }}><b>Size:</b> {item.size}</p>
+                <p style={{ fontSize: "18px" }}><b>Price:</b> {item.price} DKK</p>
+                <p style={{ fontSize: "18px" }}><b>Color:</b> {item.color}</p>
+                <p style={{ fontSize: "18px" }}><b>Description:</b> {item.description}</p>
                 <Button addToBasket={addToBasket} />
             </div>
         </div>
