@@ -1,18 +1,15 @@
 import React from 'react';
 import Shop from './components/shop';
-import logo from './logo.svg';
 import './App.css';
-import Button from './components/button';
-import { Image } from 'lucide-react';
 
-import Clothes from './components/shopItems';
-
-
+// Definerer hovedkomponenten App, som indeholder strukturen for hele applikationen
 function App() {
   return (
-
+      // Returnerer en div med CSS-klassen "App" for den overordnede container
       <div className="App">
+          {/* Header-sektionen af applikationen med "App-header" styling */}
           <header className="App-header">
+              {/* Inkluderer Shop-komponenten i headeren, som viser butikkens varer og kurv */}
               <Shop />
           </header>
       </div>
